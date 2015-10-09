@@ -1,0 +1,72 @@
+/*!
+ * Moonkake v3.0.5
+ */
+
+/* RESET
+-------------------------------------------------- */
+
+*,
+*:before,
+*:after {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+
+html {font-size:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+body {margin:0; font-size:16px; line-height:1.2; direction:ltr; text-align:left; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#000; background:#fff; font-smooth:always; -webkit-font-smoothing:antialiased;}
+
+a {color:inherit; text-decoration:underline; -webkit-tap-highlight-color:rgba(0,0,0,0); outline:none; -moz-outline-style:none;}
+a:hover {text-decoration:none;}
+
+p {margin:0 0 10px;}
+
+img {vertical-align:top; -ms-interpolation-mode:bicubic; max-width:100%; height:auto; border:0;}
+
+[hidden] {display:none;}
+
+/* COMMON
+-------------------------------------------------- */
+
+body {min-width:320px;}
+
+.wrapper {margin:0 auto; max-width:1024px; padding:0 30px;}
+
+  .logotype {text-align:center; margin:24px 0 55px 0;}
+
+  .content {max-width:822px; margin:0 auto 40px auto;}
+    .content a {text-decoration:none;}
+    .content a:hover {text-decoration:underline;}
+
+  .social {margin:0; padding:0; list-style:none; overflow:hidden; width:100%;}
+    .social .social__item {width:16.66%; text-align:center; float:left;}
+
+    i[class^="icon-"] {width:114px; height:114px; display:inline-block; background-image:url(social.png); background-repeat:no-repeat; text-indent:-9999px;}
+      .icon-yt {background-position:0 0;}
+      .icon-tw {background-position:0 -114px;}
+      .icon-ig {background-position:0 -228px;}
+      .icon-fb {background-position:0 -342px;}
+      .icon-vk {background-position:0 -456px;}
+      .icon-it {background-position:0 -570px;}
+
+/* RESPONSIVE
+-------------------------------------------------- */
+
+@media screen and (max-width:1280px) {
+  .social .social__item {width:16.66%;}
+}
+
+@media screen and (max-width:1024px) {
+  .social .social__item {width:33.33%; margin-bottom:30px;}
+}
+
+@media screen and (max-width:760px) {
+  .logotype {margin-bottom:10px;}
+  .social .social__item {width:50%; margin-bottom:30px;}
+}
+
+/* ANIMATION
+-------------------------------------------------- */
+
+.social .social__item {
+  -webkit-transition:all .15s ease;
+     -moz-transition:all .15s ease;
+       -o-transition:all .15s ease;
+          transition:all .15s ease;
+}
